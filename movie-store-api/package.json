@@ -1,0 +1,31 @@
+{
+  "name": "movie-store-api",
+  "version": "1.0.0",
+  "description": "REST API to retrieve, add, update and delete movie/tv-show details to/from a postgresql datatbase hosted on cloud",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajulthomas/movie-store-project.git"
+  },
+  "keywords": [
+    "expressjs",
+    "javascript",
+    "rest",
+    "api",
+    "nodejs"
+  ],
+  "author": "ajulthomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajulthomas/movie-store-project/issues"
+  },
+  "homepage": "https://github.com/ajulthomas/movie-store-project#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
