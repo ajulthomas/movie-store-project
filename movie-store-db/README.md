@@ -66,3 +66,8 @@ $ docker inspect movie-db
 $ docker stop movie-db
 ```
 
+
+
+
+
+[Reference](https://wkrzywiec.medium.com/database-in-a-docker-container-how-to-start-and-whats-it-about-5e3ceea77e50)

@@ -18,5 +18,4 @@ VALUES (
         1,
         CURRENT_TIMESTAMP
     )
-RETURNING *
-	;
+RETURNING *;
