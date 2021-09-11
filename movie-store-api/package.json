@@ -4,7 +4,7 @@
   "description": "REST API to retrieve, add, update and delete movie/tv-show details to/from a postgresql datatbase hosted on cloud",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
