@@ -1,13 +1,11 @@
 # Setup movie database
 
-
-
-##### Build image
+## Build image
 
 ```dockerfile
 # syntax=docker/dockerfile:1
 FROM postgres:13.4
-ENV POSTGRES_PASSWORD admin 
+ENV POSTGRES_PASSWORD admin
 ENV POSTGRES_DB movieDB
 COPY init_script.sql /docker-entrypoint-initdb.d/
 COPY load_data.sql /docker-entrypoint-initdb.d/
@@ -18,19 +16,17 @@ Build movie-db-image from `Dockerfile`:
 
 ```sh
 $ docker build -t movie-db-image .
+// builds docker image using the Dockerfile present in current directory
 ```
 
-
-
-##### List images
+## List images
 
 ```sh
 $ docker image ls
+// lists all locally available docker images
 ```
 
-
-
-##### Run Container
+## Run Container
 
 Run the container in detached mode:
 
@@ -42,32 +38,25 @@ $ docker run -d \
 > movie-db-image
 ```
 
-
-
-##### List Container
+## List Container
 
 ```sh
 $ docker ps
+// shows currently running containers
 ```
 
-
-
-##### Inspect the container
+## Inspect the container
 
 ```sh
 $ docker inspect movie-db
+// shows details about the movie-db container
 ```
 
-
-
-##### Stop the container:
+## Stop the container
 
 ```sh
 $ docker stop movie-db
+movie-db
 ```
-
-
-
-
 
 [Reference](https://wkrzywiec.medium.com/database-in-a-docker-container-how-to-start-and-whats-it-about-5e3ceea77e50)
